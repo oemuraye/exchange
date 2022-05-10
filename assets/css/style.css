@@ -1,0 +1,16 @@
+@import './header.css';
+
+:root {
+  --basic-color: #1c91e9;
+  --basic-dark: #06101f;
+  --dark-color: #030a1ff4;
+  --white-color: #fff;
+  --offcanvas-bg-color: #0b1225;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
