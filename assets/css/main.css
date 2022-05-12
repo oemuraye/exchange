@@ -1,0 +1,232 @@
+.hero-section {
+    background-color: var(--dark-color);
+    background-image: url('https://infinitycrypto.com/assets/bg/homeBG.svg');
+    /* background-attachment: fixed; */
+    background-size: contain;
+    height: 600px;
+    margin-bottom: -100px;
+}
+.hero-section .container-fluid {
+    padding-top: 100px;
+    color: var(--white-color);
+}
+.hero-section h1 {
+    font-size: 42px;
+    font-weight: 550;
+    letter-spacing: 0.52px;
+}
+.hero-section p {
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: 0.52px;
+}
+
+/* Coin-Section */
+.coin-section {
+    background-color: #ffffff;;
+}
+.coin-section.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.coin-section .section-header {
+    background-color: #f9fafc;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--dark-color);
+}
+.coin-section .list-group-item:first-child {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.coin-section .list-group-item:last-child {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.coin-section li {
+    padding: 10px 25px;
+}
+.coin-section li a {
+    text-decoration: none ;
+}
+.coin-section li:hover {
+    box-shadow: 0px 15px 8px 5px #e9e8e8;
+    transform: scale(1.01);
+    /* transition: .5s ease-in-out; */
+    z-index: 2;
+}
+.coin-section li:nth-child(even) {
+    background-color: #fbfcfd;
+}
+.coin-grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas: 'coin-pair coin-price coin-change coin-chart coin-trade';
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 0.75fr;
+}
+.coin-section .text-area {
+    line-height: 0.5;
+}
+.coin-section .text-area h6 {
+    color: var(--dark-color);
+}
+.coin-section .text-area p {
+    letter-spacing: 0.32px;
+}
+.coin-section .coin-trade .btn-primary,
+.regInfo-section .reg-info .btn-primary,
+.trade-section .trade-info .btn-primary,
+.earn-section .earn-info .btn-primary,
+.ecosystem-section .ecosystem-info .btn-primary,
+.platform-section .platform-img .btn-primary {
+    background: linear-gradient(90.32deg, rgb(27, 149, 235) 2.5%, rgb(20, 95, 211) 99.8%);
+    border-radius: 5px;
+    /* color: rgb(255, 255, 255) ; */
+}
+.increase {
+    color: #1c9f71;
+}
+.decrease {
+    color: #d73d51;
+}
+.coin-section .action-area {
+    border-bottom: 1px solid #d7cfcf;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 15px 8px 5px #e9e8e8;
+}
+.coin-section .action-area a {
+    text-decoration: none;
+    color: #798aa9;
+}
+
+ 
+.regInfo-section .reg-info h1 {
+    font-size: 40px;
+}
+.regInfo-section .reg-info p,
+.trade-section .trade-info p,
+.earn-section .earn-info p,
+.ecosystem-section .ecosystem-info p,
+.platform-section .platform-info p,
+.features-section .features-info p {
+    font-size: 15px;
+    letter-spacing: 0.27;
+    line-height: 1.8;
+    color: #6e7ba3;
+}
+
+.ecosystem-section {
+    margin-bottom: -75px;
+}
+
+
+.platform-section,
+.future-section {
+    background-color: #08112c;
+}
+.platform-section .platform-heading,
+.future-section .future-heading {
+    padding-top: 125px;
+}
+.platform-section .platform-heading h1,
+.future-section .future-heading h1 {
+    font-size: 42px;
+}
+.platform-section .platform-heading p,
+.future-section .future-heading p {
+    font-size: 16px;
+    line-height: 36px;
+    color: #a5acbf;
+    letter-spacing: 0.42px;
+}
+.platform-section .platform-img {
+    position: relative;
+    cursor: pointer;
+}
+.platform-section .platform-img .platform-btn {
+    position: relative;
+    /* background: linear-gradient(9.8deg, rgba(6, 12, 33, 0.5) 20.1%, rgba(8, 20, 47, 0.05) 92.77%); */
+    top: 150px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease 0s;
+}
+.platform-section .platform-img:hover .platform-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.platform-section .platform-info {
+    margin: auto;
+}
+
+.features-section .features-info .text-primary {
+    color: #0090eb !important;
+}
+
+.roadmap {
+    margin: auto;
+}
+
+.future-section .roadmap-num {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 16px;
+    color: var(--white-color);
+    padding: 14px;
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #081646;
+    justify-content: center;
+    cursor: context-menu;
+    z-index: 1;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .hero-section {
+        margin-bottom: 20px;
+    }
+    .coin-chart {
+        display: none;
+    }
+    .coin-grid {
+        grid-template-areas: 'coin-pair coin-price coin-change coin-trade';
+        grid-template-columns: 1.3fr 1.1fr 1.1fr 1fr;
+    }
+
+    .platform-section .platform-img .platform-btn {
+        top: 110px;
+    }
+}
+@media (max-width: 400px) {
+    .hero-section h1 {
+        font-size: 30px;        
+    }
+    .coin-trade {
+        display: none;
+    }
+    .coin-grid {
+        grid-template-areas: 'coin-pair coin-price coin-change';
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
+    .gap-md-4 .btn-primary {
+        margin-right: 4px;
+    }
+}

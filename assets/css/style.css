@@ -1,4 +1,6 @@
 @import './header.css';
+@import './main.css';
+@import './footer.css';
 
 :root {
   --basic-color: #1c91e9;
@@ -14,3 +16,14 @@
 .hide {
   display: none;
 }
+
+
+/* Header */
+/* Go to header.css */
+
+
+/* main */
+/* Go to main.css  */
+
+/* footer */
+/* Go to footer.css  */

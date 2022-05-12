@@ -1,0 +1,26 @@
+footer {
+    background-color: #030a1f;
+}
+footer a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+footer a:hover {
+    color: var(--white-color);
+}
+.footer-links {
+    margin: auto;
+}
+.social-section .social-links {
+    font-size: 22px;
+}
+.other-links a,
+.terms-links a {
+    font-size: 16px;
+    line-height: 36px;
+    color: #a5acbf;
+    letter-spacing: 0.42px;
+}
+.terms-links {
+    font-size: 13px;
+}

@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav class="container-fluid navbar navbar-default-color p-2 d-flex ">
-           <div class="d-flex gap-3 align-items-center pe-5">
+           <div class="d-flex gap-3 align-items-center pe-md-5 pe-sm-0">
                 <div class="dropdown">
                     <a class="d-flex align-items-center gap-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="./assets/images/logo.png" class="d-block" height="40px"  width="40px" alt="logo"> 
@@ -230,7 +230,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center gap-md-4 ">
                 <a href="#" class="btn btn-primary px-3">Connect</a>
                 <div class="dropdown show-on-desktop pt-2">
                         <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -282,7 +282,7 @@
                 <a href="#" class="offcanvas-title btn btn-primary w-100" id="offcanvasExampleLabel">Connect Wallet</a>
             </div>
             <div class="offcanvas-body d-flex flex-column gap-1">
-                <div class="" id="accordionExample">
+                <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -319,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
                 <div>
                     <a href="#" class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         <div class="d-flex">
@@ -328,7 +328,7 @@
                         </div>
                     </a>
                 </div>
-                 <div class="" id="accordionExample">
+                 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -358,8 +358,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                 <div class="" id="accordionExample">
+                
+                 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -389,8 +389,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                 <div class="" id="accordionExample">
+                
+                 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -420,8 +420,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                 <div class="" id="accordionExample">
+                
+                 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                             <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -453,21 +453,477 @@
                     </div>
                 </div>
                 <hr class="text-white">
-                 <div class="btn w-100 border text-white d-flex justify-content-between align-items-center collapsed">
+                 <div id="myBtn" class="p-2 btn border rounded text-white d-flex justify-content-between align-items-center collapsed">
                     <div class="d-flex align-items-center gap-3">
-                        <img src="./assets/images/usa.png" width="25px" height="16px" alt="currency-logo">
+                        <img src="./assets/images/en.png" width="25px" height="16px" alt="currency-logo">
                         <h6 class="mt-1">EN | USD</h6>
                     </div>
                     <div><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                
+                    <!-- The Modal -->
+                    <div id="myModal" class="currency-modal modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="d-flex justify-content-end close-times m-2"><span class="close-button fa fa-times"></span></div>
+                            <div class="row py-2">
+                                <div class="col-6">
+                                    <h6 class="text-muted text-center">Language</h6>
+                                    <div class="list-group text-start ">
+                                        <a href="#" class="active">English</a>
+                                        <a href="#" >Lorem</a>
+                                        <a href="#" >Lorem</a>
+                                        <a href="#" >Lorem</a>
+                                        <a href="#" >Lorem</a>
+                                        <a href="#" >Lorem</a>
+                                        <a href="#" >Lorem</a>
+                                        <a href="#" >Lorem</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="text-muted text-center">Currency</h6>
+                                    <div class="list-group text-start currency">
+                                        <a href="#" class="active">$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                        <a href="#" >$ (USD)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
                 </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section></section>
+        <section class="container-fluid hero-section">
+            <div class="container-fluid d-grid justify-content-center text-md-center text-sm-start gap-4">
+                <h1>The leading DeFi protocol & platform to trade, invest, earn and manage your crypto</h1>
+                <p>An all-in-one decentralized finance ecosystem built by the people for the people for financial freedom</p>
+                <div class="action-area d-flex flex-wrap justify-content-center gap-4">
+                    <a href="#" class="btn btn-primary px-4 p-2 fw-bold">Start Trading now</a>
+                    <a href="#" class="btn btn-outline-primary px-4 p-2 fw-bold text-white">Start Trading now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="coin-section container-fluid pb-5">
+            <div class="">
+                <div class="section-header fw-bold px-4 coin-grid pt-3">
+                    <div class="text-start coin-pair"><p>Pair</p></div>
+                    <div class="text-end coin-price"><p>Price</p></div>
+                    <div class="text-end coin-change"><p>24h Change</p></div>
+                    <div class="text-end coin-chart"><p>Chart (7d)</p></div>
+                    <div class="text-end coin-trade"><p>Trade</p></div>
+                </div>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#" class="coin-grid">
+                            <div class="text-start coin-pair">
+                                <div class="d-flex gap-2 ">
+                                    <img src="./assets/images/bitcoin.svg" width="40px" height="40px" alt="coin-logo">
+                                    <div class="text-area">
+                                        <h6>Bitcoin</h6>
+                                        <p class="text-muted">BTCB/SHARD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end coin-price text-dark"><h6>$0.0605</h6></div>
+                            <div class="text-end coin-change increase"><h6>+0.18</h6></div>
+                            <div class="text-end coin-chart"><img src="./assets/images/line-chart.png" width="130" height="36px" alt="chart"></div>
+                            <div class="text-end coin-trade "><button class="btn btn-primary px-4">Trade</button></div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="coin-grid">
+                            <div class="text-start coin-pair">
+                                <div class="d-flex gap-2 ">
+                                    <img src="./assets/images/bitcoin.svg" width="40px" height="40px" alt="coin-logo">
+                                    <div class="text-area">
+                                        <h6>Bitcoin</h6>
+                                        <p class="text-muted">BTCB/SHARD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end coin-price text-dark"><h6>$0.0605</h6></div>
+                            <div class="text-end coin-change decrease"><h6>+0.18</h6></div>
+                            <div class="text-end coin-chart"><img src="./assets/images/line-chart.png" width="130" height="36px" alt="chart"></div>
+                            <div class="text-end coin-trade "><button class="btn btn-primary px-4">Trade</button></div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="coin-grid">
+                            <div class="text-start coin-pair">
+                                <div class="d-flex gap-2 ">
+                                    <img src="./assets/images/bitcoin.svg" width="40px" height="40px" alt="coin-logo">
+                                    <div class="text-area">
+                                        <h6>Bitcoin</h6>
+                                        <p class="text-muted">BTCB/SHARD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end coin-price text-dark"><h6>$0.0605</h6></div>
+                            <div class="text-end coin-change increase"><h6>+0.18</h6></div>
+                            <div class="text-end coin-chart"><img src="./assets/images/line-chart.png" width="130" height="36px" alt="chart"></div>
+                            <div class="text-end coin-trade "><button class="btn btn-primary px-4">Trade</button></div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="coin-grid">
+                            <div class="text-start coin-pair">
+                                <div class="d-flex gap-2 ">
+                                    <img src="./assets/images/bitcoin.svg" width="40px" height="40px" alt="coin-logo">
+                                    <div class="text-area">
+                                        <h6>Bitcoin</h6>
+                                        <p class="text-muted">BTCB/SHARD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end coin-price text-dark"><h6>$0.0605</h6></div>
+                            <div class="text-end coin-change decrease"><h6>+0.18</h6></div>
+                            <div class="text-end coin-chart"><img src="./assets/images/line-chart.png" width="130" height="36px" alt="chart"></div>
+                            <div class="text-end coin-trade "><button class="btn btn-primary px-4">Trade</button></div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="coin-grid">
+                            <div class="text-start coin-pair">
+                                <div class="d-flex gap-2 ">
+                                    <img src="./assets/images/bitcoin.svg" width="40px" height="40px" alt="coin-logo">
+                                    <div class="text-area">
+                                        <h6>Bitcoin</h6>
+                                        <p class="text-muted">BTCB/SHARD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end coin-price text-dark"><h6>$0.0605</h6></div>
+                            <div class="text-end coin-change decrease"><h6>+0.18</h6></div>
+                            <div class="text-end coin-chart"><img src="./assets/images/line-chart.png" width="130" height="36px" alt="chart"></div>
+                            <div class="text-end coin-trade "><button class="btn btn-primary px-4">Trade</button></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="action-area d-grid justify-content-center align-content-center fw-bold px-4 pt-3">
+                    <a href="#">View more market <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="regInfo-section container-fluid row d-flex flex-wrap-reverse align-items-center py-5">
+            <div class="col-md-5 col-sm-10 py-md-5 py-sm-2 mt-sm-5 d-grid justify-content-center m-auto">
+                <div><img src="./assets/images/walletConnect.png" width="440px" height="400px" alt="hashbar-img"></div>
+            </div>
+            <div class="col-md-7 col-sm-12 py-md-5 py-sm-2">
+                <div class="d-grid gap-4 reg-info ps-5">
+                    <a href="#" class="btn btn-outline-primary w-50 fw-bold">Decentralization & non-custodial</a>
+                    <h1 class="fw-bold">No registration <span class="fw-light">required</span></h1>
+                    <p>Infinity Crypto is a leading decentralized, non-custodial financial hub and exchange platform. Simply connect with your Infinity Wallet or any other compatible wallet and start trading, earning and interacting with the platform securely in seconds.</p>
+                    <a href="#" class="btn btn-primary w-50 py-2">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trade-section container-fluid row d-flex align-items-center py-5">
+            <div class="col-md-7 col-sm-12 py-md-5 py-sm-2">
+                <div class="d-grid gap-3 trade-info ps-5">
+                    <a href="#" class="btn btn-outline-primary w-50 fw-bold">Trade, Buy & Sell</a>
+                    <h1 class="fw-bold">Trade <span class="fw-light">like a pro</span></h1>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Exchange decentralized </span> directly between the assets you want without needing to manually navigate multiple trading pairs.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Exchange decentralized </span> directly between the assets you want without needing to manually navigate multiple trading pairs.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Exchange decentralized </span> directly between the assets you want without needing to manually navigate multiple trading pairs.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Exchange decentralized </span> directly between the assets you want without needing to manually navigate multiple trading pairs.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary w-50 py-2">Start trading now</a>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-10 py-md-5 py-sm-2 mt-sm-5 d-grid justify-content-center m-auto">
+                <div><img src="./assets/images/exchangePage.png" width="360px" height="245px" alt="hashbar-img"></div>
+            </div>
+        </section>
+
+        <section class="earn-section container-fluid row d-flex flex-wrap-reverse align-items-center py-5">
+            <div class="col-md-5 col-sm-10 py-md-5 py-sm-2 mt-sm-5 d-grid justify-content-center m-auto">
+                <div><img src="./assets/images/liquidityEarn.png" width="370px" height="210px" alt="hashbar-img"></div>
+            </div>
+            <div class="col-md-7 col-sm-12 py-md-5 py-sm-2">
+                <div class="d-grid gap-3 trade-info ps-5">
+                    <a href="#" class="btn btn-outline-primary w-25 fw-bold">Hold & Earn</a>
+                    <h1 class="fw-bold">Trade <span class="fw-light">like a pro</span></h1>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Provide tokens </span> to a selection of decentralized liquidity pools to automatically earn from the safety of your own wallet.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Provide tokens </span> to a selection of decentralized liquidity pools to automatically earn from the safety of your own wallet.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Provide tokens </span> to a selection of decentralized liquidity pools to automatically earn from the safety of your own wallet.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="fa fa-check text-primary mt-2 me-3"></div>
+                        <div class="">
+                            <p><span class="fw-bold text-dark">Provide tokens </span> to a selection of decentralized liquidity pools to automatically earn from the safety of your own wallet.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary w-50 py-2">Start earning now</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="ecosystem-section container-fluid row d-flex align-items-center pt-5">
+            <div class="col-lg-7 col-md-12 pt-lg-5 py-md-2">
+                <div class="d-grid gap-4 ecosystem-info ps-5">
+                    <a href="#" class="btn btn-outline-primary w-50 fw-bold">Join the ecosystem</a>
+                    <h1 class="fw-bold">Get more with <span class="fw-light">Infinity Wallet</span></h1>
+                    <p>The only wallet you need to easily manage, earn, trade and secure your assets. Download now for the ultimate decentralized experience.</p>
+                    <div class="btn-group gap-4">
+                        <a href="#" class="btn btn-primary py-2">Downlaod Desktop</a>
+                        <a href="#" class="btn btn-primary py-2"><img src="./assets/images/google_play_soon.svg" width="110px" height="26px" alt="google-logo"></a>
+                        <a href="#" class="btn btn-primary py-2"><img src="./assets/images/mac_image_soon.svg" width="98px" height="26px" alt="google-logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-10 pt-lg-5 pt-md-2 mt-sm-5 d-grid justify-content-center m-auto">
+                <div><img src="./assets/images/infinityWalletPhone.png" width="470px" height="514px" alt="hashbar-img"></div>
+            </div>
+        </section>
+
+        <section class="platform-section container-fluid">
+            <div class="platform-heading text-center text-white d-grid gap-3">
+                <h1>World-class <span class="fw-bold">Trading platform</span></h1>
+                <p>Monitor the market in real-time and execute the trades you want with the tools you need on advanced trading</p>
+            </div>
+            <div class="platform-img my-5">
+                <div class="platform-btn"><a href="#" class="btn btn-primary px-5 py-2">Start trading now</a></div>
+                <img src="./assets/images/tradePage.svg"  alt="platform-svg">
+            </div>
+            <div class="platform-info container-fluid row d-flex my-5 py-5">
+                <div class="col-md-4 col-sm-6">
+                    <h5 class="text-light">Trade Smarter</h5>
+                    <p>Easily track your trades, earnings and the performance of any pool over time, with advanced charting to help you make the most informed decisions on trades and earnings.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <h5 class="text-light">Trade Smarter</h5>
+                    <p>Easily track your trades, earnings and the performance of any pool over time, with advanced charting to help you make the most informed decisions on trades and earnings.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <h5 class="text-light">Trade Smarter</h5>
+                    <p>Easily track your trades, earnings and the performance of any pool over time, with advanced charting to help you make the most informed decisions on trades and earnings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section container-fluid my-5 ">
+            <div class="features-info container-fluid row d-flex my-5 py-5">
+                <div class="col-md-4 col-sm-6 text-center py-3">
+                    <img src="./assets/images/secure.svg" width="96px" height="96px" alt="feature-svg">
+                    <h5 class="text-primary">Secure</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus distinctio sit numquam.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center py-3">
+                    <img src="./assets/images/intuitive.svg" width="96px" height="96px" alt="feature-svg">
+                    <h5 class="text-primary">Intuitive</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus distinctio sit numquam.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center py-3">
+                    <img src="./assets/images/bridge.svg" width="96px" height="96px" alt="feature-svg">
+                    <h5 class="text-primary">Blockchain Bridging</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus distinctio sit numquam.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center py-3">
+                    <img src="./assets/images/tokens.svg" width="96px" height="96px" alt="feature-svg">
+                    <h5 class="text-primary">Open for all tokens</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus distinctio sit numquam.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center py-3">
+                    <img src="./assets/images/tradeAnything.svg" width="96px" height="96px" alt="feature-svg">
+                    <h5 class="text-primary">Trade anything</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus distinctio sit numquam.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center py-3">
+                    <img src="./assets/images/evolving.svg" width="96px" height="96px" alt="feature-svg">
+                    <h5 class="text-primary">Continuously evolving</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus distinctio sit numquam.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="future-section container-fluid pb-5">
+            <div class="future-heading text-center text-white d-grid gap-3">
+                <h1>World-class <span class="fw-bold">Trading platform</span></h1>
+                <p>Monitor the market in real-time and execute the trades you want with the tools you need on advanced trading</p>
+            </div>
+            
+            <div class="roadmap container">
+                <div class="roadmap-details d-flex justify-content-between">
+                    <div class="roadmap-num py-4">I</div>
+                    <div class="roadmap-num py-4">II</div>
+                    <div class="roadmap-num py-4">III</div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="container-fluid py-5">
+        <div class="footer-links d-flex justify-content-around gap-5">
+            <div class="social-section d-grid gap-4">
+                <a class="d-flex align-items-center gap-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/images/logo.png" class="d-block" height="40px"  width="40px" alt="logo"> 
+                    <h5>ExchangeCrypto </h5>
+                </a>
+                <div class="dropdown">
+                    <div class="d-flex align-items-center text-white gap-3 border py-1 px-4 rounded" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/images/en.png" width="25px" height="16px" alt="currency-logo">
+                        <h6 class="mt-1">English (US)</h6>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-4" href="#">
+                                    <span class="fa fa-user fa-1x bg-primary rounded-circle p-3"></span> 
+                                    <div class="pt-3">
+                                        <span>Lorem</span>
+                                        <p class="text-muted">Lorem ipsum dolor</p>
+                                    </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-4" href="#">
+                                    <span class="fa fa-user fa-1x bg-primary rounded-circle p-3"></span> 
+                                    <div class="pt-3">
+                                        <span>Lorem</span>
+                                        <p class="text-muted">Lorem ipsum dolor</p>
+                                    </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-4" href="#">
+                                    <span class="fa fa-user fa-1x bg-primary rounded-circle p-3"></span> 
+                                    <div class="pt-3">
+                                        <span>Lorem</span>
+                                        <p class="text-muted">Lorem ipsum dolor</p>
+                                    </div>
+                            </a>
+                        </li>
+                     </ul>
+                </div>
+                <div class="social-links d-flex justify-content-between">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-telegram-plane"></a>
+                    <a href="#" class="fab fa-reddit-alien"></a>
+                    <a href="#" class="fa fa-envelope"></a>
+                </div>
+            </div>
+
+            <div class="other-links d-grid pt-2">
+                <h6 class="text-light">Products</h6>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+            <div class="other-links d-grid pt-2">
+                <h6 class="text-light">Products</h6>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+            <div class="other-links d-grid pt-2">
+                <h6 class="text-light">Products</h6>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+            <div class="other-links d-grid pt-2">
+                <h6 class="text-light">Products</h6>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+        </div>
+        <div class="terms-links container-fluid d-flex py-3 gap-5">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+    </footer>
 </body>
 </html>
