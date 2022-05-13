@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="container-fluid navbar navbar-default-color p-2 d-flex ">
+        <nav class="container-fluid navbar fixed-top header-navbar navbar-default-color p-2 d-flex ">
            <div class="d-flex gap-3 align-items-center pe-md-5 pe-sm-0">
                 <div class="dropdown">
                     <a class="d-flex align-items-center gap-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -272,7 +272,7 @@
                             </div>
                         </div>
                     </div>
-                <a class="text-white show-on-mobile" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa fa-bars fa-2x"></i></a>
+                <a class="text-white show-on-mobile ps-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa fa-bars fa-2x"></i></a>
             </div>
         </nav>
 
@@ -753,7 +753,7 @@
                     <a href="#" class="btn btn-outline-primary w-50 fw-bold">Join the ecosystem</a>
                     <h1 class="fw-bold">Get more with <span class="fw-light">Infinity Wallet</span></h1>
                     <p>The only wallet you need to easily manage, earn, trade and secure your assets. Download now for the ultimate decentralized experience.</p>
-                    <div class="btn-group gap-4">
+                    <div class="btn-group d-flex flex-wrap gap-4">
                         <a href="#" class="btn btn-primary py-2">Downlaod Desktop</a>
                         <a href="#" class="btn btn-primary py-2"><img src="./assets/images/google_play_soon.svg" width="110px" height="26px" alt="google-logo"></a>
                         <a href="#" class="btn btn-primary py-2"><img src="./assets/images/mac_image_soon.svg" width="98px" height="26px" alt="google-logo"></a>
@@ -825,65 +825,114 @@
             </div>
         </section>
 
-        <section class="future-section container-fluid pb-5">
+        <section class="future-section container-fluid">
             <div class="future-heading text-center text-white d-grid gap-3">
                 <h1>World-class <span class="fw-bold">Trading platform</span></h1>
                 <p>Monitor the market in real-time and execute the trades you want with the tools you need on advanced trading</p>
             </div>
             
             <div class="roadmap container">
-                <div class="roadmap-details d-flex justify-content-between">
-                    <div class="roadmap-num py-4">I</div>
-                    <div class="roadmap-num py-4">II</div>
-                    <div class="roadmap-num py-4">III</div>
+                <div class="roadmap-desktop-show">
+                    <div class="roadmap-details first d-flex justify-content-between">
+                        <div class="roadmap-num py-4" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" title="Lorem Ipsum" data-bs-content="Track and stake in yield pools or special staking reward distribution pools.">I</div>
+                        <div class="roadmap-num py-4" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" title="Lorem Ipsum" data-bs-content="Track and stake in yield pools or special staking reward distribution pools.">III</div>
+                        <div class="roadmap-num py-4" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" title="Lorem Ipsum" data-bs-content="Track and stake in yield pools or special staking reward distribution pools.">V</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="roadmap-details second d-flex justify-content-around">
+                        <div class="roadmap-num py-4" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" title="Lorem Ipsum" data-bs-content="Track and stake in yield pools or special staking reward distribution pools.">II</div>
+                        <div class="roadmap-num py-4" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" title="Lorem Ipsum" data-bs-content="Track and stake in yield pools or special staking reward distribution pools.">IV</div>
+                        <div class="roadmap-num py-4" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" title="Lorem Ipsum" data-bs-content="Track and stake in yield pools or special staking reward distribution pools.">VI</div>
+                    </div>
+                </div>
+
+
+                <div class="roadmap-details-mobile contanier">
+                    <div class="divider-mobile"></div>
+                    <div class="roadmap-mobile-show">
+                        <div class="d-flex">
+                            <div class="roadmap-num py-4 me-3">I</div>
+                            <div>
+                                <h5>Lorem ipsum sunt</h5>
+                                <p>Track and stake in yield pools or special staking reward distribution pools.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roadmap-num py-4 me-3">II</div>
+                            <div>
+                                <h5>Lorem ipsum sunt</h5>
+                                <p>Track and stake in yield pools or special staking reward distribution pools.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roadmap-num py-4 me-3">III</div>
+                            <div>
+                                <h5>Lorem ipsum sunt</h5>
+                                <p>Track and stake in yield pools or special staking reward distribution pools.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roadmap-num py-4 me-3">IV</div>
+                            <div>
+                                <h5>Lorem ipsum sunt</h5>
+                                <p>Track and stake in yield pools or special staking reward distribution pools.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roadmap-num py-4 me-3">V</div>
+                            <div>
+                                <h5>Lorem ipsum sunt</h5>
+                                <p>Track and stake in yield pools or special staking reward distribution pools.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roadmap-num py-4 me-3">I</div>
+                            <div>
+                                <h5>Lorem ipsum sunt</h5>
+                                <p>Track and stake in yield pools or special staking reward distribution pools.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roadmap-num py-4 me-3">VI</div>
+                            <div>
+                                <h5>Lorem ipsum sunt</h5>
+                                <p>Track and stake in yield pools or special staking reward distribution pools.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
     </main>
 
-    <footer class="container-fluid py-5">
-        <div class="footer-links d-flex justify-content-around gap-5">
-            <div class="social-section d-grid gap-4">
+    <footer class="container-fluid pt-5">
+        <!-- Desktop/tap -->
+        <div class="footer-links container-fluid">
+            <div class="social-section">
                 <a class="d-flex align-items-center gap-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="./assets/images/logo.png" class="d-block" height="40px"  width="40px" alt="logo"> 
                     <h5>ExchangeCrypto </h5>
                 </a>
-                <div class="dropdown">
+                <div class="dropdown py-4">
                     <div class="d-flex align-items-center text-white gap-3 border py-1 px-4 rounded" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="./assets/images/en.png" width="25px" height="16px" alt="currency-logo">
                         <h6 class="mt-1">English (US)</h6>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </div>
 
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center gap-4" href="#">
-                                    <span class="fa fa-user fa-1x bg-primary rounded-circle p-3"></span> 
-                                    <div class="pt-3">
-                                        <span>Lorem</span>
-                                        <p class="text-muted">Lorem ipsum dolor</p>
-                                    </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center gap-4" href="#">
-                                    <span class="fa fa-user fa-1x bg-primary rounded-circle p-3"></span> 
-                                    <div class="pt-3">
-                                        <span>Lorem</span>
-                                        <p class="text-muted">Lorem ipsum dolor</p>
-                                    </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center gap-4" href="#">
-                                    <span class="fa fa-user fa-1x bg-primary rounded-circle p-3"></span> 
-                                    <div class="pt-3">
-                                        <span>Lorem</span>
-                                        <p class="text-muted">Lorem ipsum dolor</p>
-                                    </div>
-                            </a>
-                        </li>
-                     </ul>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="d-flex row dropdown-item gap-2 text-center">
+                            <div class="col-5"><a href="#" class="active">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                        </div>
+                     </div>
                 </div>
                 <div class="social-links d-flex justify-content-between">
                     <a href="#" class="fab fa-twitter"></a>
@@ -893,7 +942,6 @@
                     <a href="#" class="fa fa-envelope"></a>
                 </div>
             </div>
-
             <div class="other-links d-grid pt-2">
                 <h6 class="text-light">Products</h6>
                 <a href="#">Lorem ipsum</a>
@@ -919,11 +967,130 @@
                 <a href="#">Lorem ipsum</a>
             </div>
         </div>
-        <div class="terms-links container-fluid d-flex py-3 gap-5">
+
+        <!-- other device -->
+        <div class="accordion" id="footer-accordion">
+            <div class="accordion-item pb-3">
+                <h2 class="accordion-header" id="headingOne">
+                    <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="d-flex py-1">
+                            <h5>Products</h5>
+                        </div>
+                        <div><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                    </div>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#footer-accordion">
+                    <div class="accordion-body">
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                    </div>
+                </div>
+            </div>
+                 
+            <div class="accordion-item pb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                    <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="d-flex py-1">
+                            <h5>Services</h5>
+                            </div>
+                        <div><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                    </div>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#footer-accordion">
+                    <div class="accordion-body">
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="accordion-item pb-3">
+                <h2 class="accordion-header" id="headingThree">
+                    <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="d-flex py-1">
+                            <h5>Analytics</h5>
+                        </div>
+                        <div><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                    </div>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#footer-accordion">
+                    <div class="accordion-body">
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                    </div>
+                </div>
+            </div>
+               
+                
+           <div class="accordion-item pb-3">
+               <h2 class="accordion-header" id="headingFour">
+                   <div class="btn w-100 text-white d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                       <div class="d-flex py-1">
+                           <h5>More</h5>
+                       </div>
+                       <div><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                   </div>
+               </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#footer-accordion">
+                    <div class="accordion-body">
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                        <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-other-device container-fluid px-5 pt-5 ">
+            <div class="dropdown">
+                    <div class="d-flex align-items-center text-white gap-3 border py-1 px-4 rounded" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/images/en.png" width="25px" height="16px" alt="currency-logo">
+                        <h6 class="mt-1">English (US)</h6>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="d-flex row dropdown-item gap-2 text-center">
+                            <div class="col-5"><a href="#" class="active">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                            <div class="col-5"><a href="#">English (US)</a></div>
+                        </div>
+                     </div>
+            </div>
+            <div class="social-links ">
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-telegram-plane"></a>
+                <a href="#" class="fab fa-reddit-alien"></a>
+                <a href="#" class="fa fa-envelope"></a>
+            </div>
+        </div>
+
+        <div class="terms-links container-fluid px-5 mx-2 d-flex flex-wrap py-md-3 gap-5">
             <a href="#">Terms of Use</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Cookie Policy</a>
         </div>
+
+        <hr>
+
+        <div class="copyright container-fluid px-md-5 d-flex flex-wrap-reverse justify-content-md-between justify-content-sm-center">
+            <p>Copyright © 2022 InfinityCrypto.com All Rights Reserved</p>
+            <p>Fri, 13 May 2022 00:48:18 GMT 24h Volume $14,057.98 <i class="fa fa-wifi me-2 text-warning" aria-hidden="true"></i></p>
+        </div>
+
     </footer>
 </body>
 </html>

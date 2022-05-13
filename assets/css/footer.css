@@ -1,5 +1,6 @@
 footer {
     background-color: #030a1f;
+    margin: auto !important;
 }
 footer a {
     text-decoration: none;
@@ -9,18 +10,111 @@ footer a:hover {
     color: var(--white-color);
 }
 .footer-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
     margin: auto;
 }
-.social-section .social-links {
+footer .accordion {
+    display: none;
+}
+footer .social-links {
     font-size: 22px;
 }
 .other-links a,
-.terms-links a {
+.terms-links a,
+.copyright {
     font-size: 16px;
     line-height: 36px;
     color: #a5acbf;
     letter-spacing: 0.42px;
 }
-.terms-links {
-    font-size: 13px;
+footer .copyright {
+    margin: auto;
+    font-size: 12px;
+}
+.other-links a:hover,
+.terms-links a:hover {
+    color: var(--basic-color);
+}
+.terms-links a {
+    font-size: 13px !important;
+}
+footer hr {
+    color: #a5acbf;
+}
+.show-other-device {
+    display: none !important;  
+}
+.show-other-device .social-links {
+    display: flex;
+    justify-content: space-between;
+}
+.show-other-device .social-links a {
+    margin: 0 10px;
+}
+.social-section .dropdown-menu,
+.show-other-device .dropdown-menu {
+    box-shadow: #00000052 0px 10px 16px 0px;
+    background-color: #12192d !important;
+    border: none;
+    border-radius: 6px;
+    width: 260px;
+    padding: 15px 5px;
+    margin-top: 2px !important;
+}
+.social-section .dropdown-menu a,
+.show-other-device .dropdown-menu a {
+    color: #a5acbf;
+    padding: 12px 10px;
+}
+.social-section .dropdown-menu .active,
+.show-other-device .dropdown-menu .active {
+    color: var(--white-color);
+}
+.social-section .dropdown-menu a:hover,
+.show-other-device .dropdown-menu a:hover {
+    color: var(--white-color);
+}
+footer .accordion-body a {
+    font-size: 15px;
+    letter-spacing: 0.27;
+    line-height: 2;
+    color: #81859b;
+}
+footer .fa-angle-down {
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+
+
+
+@media (max-width: 1050px) {
+    .social-section {
+        display: none !important;
+    }
+    .show-other-device {
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-links {
+        display: none !important;
+    }
+    footer .accordion {
+        display: block;
+    }
+    .show-other-device {
+        flex-direction: column ;
+        justify-content: center;
+        max-width: 300px;
+        gap: 50px;
+    }
+    .terms-links {
+        justify-content: center;
+        padding-top: 35px;
+    }
 }

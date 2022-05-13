@@ -111,7 +111,8 @@
 .earn-section .earn-info p,
 .ecosystem-section .ecosystem-info p,
 .platform-section .platform-info p,
-.features-section .features-info p {
+.features-section .features-info p,
+.roadmap-details-mobile p {
     font-size: 15px;
     letter-spacing: 0.27;
     line-height: 1.8;
@@ -123,8 +124,7 @@
 }
 
 
-.platform-section,
-.future-section {
+.platform-section {
     background-color: #08112c;
 }
 .platform-section .platform-heading,
@@ -158,6 +158,7 @@
     opacity: 0;
     transition: opacity 0.25s ease 0s;
 }
+
 .platform-section .platform-img:hover .platform-btn {
     opacity: 1;
     visibility: visible;
@@ -166,12 +167,19 @@
     margin: auto;
 }
 
+.future-section {
+    background: url('https://infinitycrypto.com/assets/bg/homeFutureBGDesktop.svg');
+    background-position: center;
+    padding-bottom: 75px;
+}
 .features-section .features-info .text-primary {
     color: #0090eb !important;
 }
 
 .roadmap {
     margin: auto;
+    position: relative;
+    padding-top: 50px;
 }
 
 .future-section .roadmap-num {
@@ -192,6 +200,44 @@
     cursor: context-menu;
     z-index: 1;
 }
+.roadmap-details {
+    padding: 25px 50px;
+} 
+.roadmap-details-mobile .roadmap-num:hover {
+    background-color: var(--basic-color);
+}
+.roadmap-details-mobile h5 {
+    color: #f3f5fb;
+}
+.roadmap-details.first {
+    max-width: 80%;
+}
+.roadmap-details.second {
+    position: relative;
+    left: 50px;
+}
+.roadmap .divider {
+    background: linear-gradient(90deg, rgb(2, 8, 25) 1.51%, rgb(0, 89, 247) 51.18%, rgb(3, 8, 26) 100.84%);
+    width: 100%;
+    height: 2px;
+}
+.roadmap-details-mobile .roadmap-mobile-show {
+    display: grid;
+    gap: 30px;
+    position: relative;
+}
+.roadmap-details-mobile .divider-mobile {
+    background: linear-gradient(90deg, rgb(2, 8, 25) 1.51%, rgb(0, 89, 247) 51.18%, rgb(3, 8, 26) 100.84%);
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    z-index: 1;
+}
+.roadmap-details-mobile {
+    display: none;
+}
 
 
 
@@ -207,9 +253,16 @@
         grid-template-areas: 'coin-pair coin-price coin-change coin-trade';
         grid-template-columns: 1.3fr 1.1fr 1.1fr 1fr;
     }
-
     .platform-section .platform-img .platform-btn {
         top: 110px;
+    }
+}
+@media (max-width: 600px) {
+    .roadmap-desktop-show {
+        display: none;
+    }
+    .roadmap-details-mobile {
+        display: grid;
     }
 }
 @media (max-width: 400px) {
