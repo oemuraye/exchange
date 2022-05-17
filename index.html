@@ -453,8 +453,8 @@
                     </div>
                 </div>
                 <hr class="text-white">
-                 <div id="myBtn" class="p-2 btn border rounded text-white d-flex justify-content-between align-items-center collapsed">
-                    <div class="d-flex align-items-center gap-3">
+                 <div  class="p-2 btn border rounded text-white d-flex justify-content-between align-items-center collapsed">
+                    <div id="myBtn" class="d-flex align-items-center gap-3">
                         <img src="./assets/images/en.png" width="25px" height="16px" alt="currency-logo">
                         <h6 class="mt-1">EN | USD</h6>
                     </div>
@@ -464,7 +464,7 @@
                     <div id="myModal" class="currency-modal modal">
 
                         <!-- Modal content -->
-                        <div class="modal-content">
+                        <div id="modal-content" class="modal-content">
                             <div class="d-flex justify-content-end close-times m-2"><span class="close-button fa fa-times"></span></div>
                             <div class="row py-2">
                                 <div class="col-6">
@@ -517,29 +517,6 @@
                     </div>
                     
                 </div>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
         </div>
     </header>
@@ -664,7 +641,7 @@
                 <div><img src="./assets/images/walletConnect.png" width="auto" height="400px" alt="hashbar-img"></div>
             </div>
             <div class="">
-                <div class="d-flex flex-column gap-4 reg-info ps-5">
+                <div class="d-flex flex-column gap-4 reg-info ">
                     <div><a href="#" class="btn btn-outline-primary fw-bold">Decentralization & non-custodial</a></div>
                     <h1 class="fw-bold">No registration <span class="fw-light">required</span></h1>
                     <p>Infinity Crypto is a leading decentralized, non-custodial financial hub and exchange platform. Simply connect with your Infinity Wallet or any other compatible wallet and start trading, earning and interacting with the platform securely in seconds.</p>
@@ -675,7 +652,7 @@
 
         <section class="trade-section container-fluid">
             <div class=" py-5">
-                <div class="d-grid py-3 trade-info ">
+                <div class="d-grid py-3 ps-md-5 ps-sm-0 trade-info ">
                     <div><a href="#" class="btn btn-outline-primary fw-bold">Trade, Buy & Sell</a></div>
                     <h1 class="fw-bold mt-4">Trade <span class="fw-light">like a pro</span></h1>
                     <div class="d-flex ">
@@ -749,7 +726,7 @@
         
         <section class="ecosystem-section container-fluid row d-flex align-items-center pt-5">
             <div class="col-lg-7 col-md-12 pt-lg-5 py-md-2">
-                <div class="d-grid  gap-4 ecosystem-info ps-5">
+                <div class="d-grid  gap-4 ecosystem-info ">
                     <div><a href="#" class="btn btn-outline-primary fw-bold">Join the ecosystem</a></div>
                     <h1 class="fw-bold">Get more with <span class="fw-light">Infinity Wallet</span></h1>
                     <p>The only wallet you need to easily manage, earn, trade and secure your assets. Download now for the ultimate decentralized experience.</p>
@@ -827,11 +804,11 @@
 
         <section class="future-section container-fluid">
             <div class="future-heading text-center text-white d-grid gap-3">
-                <h1>World-class <span class="fw-bold">Trading platform</span></h1>
+                <h1>Future Features <span class="fw-bold">Coming Soon</span></h1>
                 <p>Monitor the market in real-time and execute the trades you want with the tools you need on advanced trading</p>
             </div>
             
-            <div class="roadmap container-fluid">
+            <div class="roadmap container">
                 <div class="roadmap-desktop-show">
                     <div class="roadmap-details first d-flex justify-content-between">
                         <div class="roadmap-num py-4" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" title="Lorem Ipsum" data-bs-content="Track and stake in yield pools or special staking reward distribution pools.">I</div>
@@ -980,7 +957,7 @@
                     </div>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
+                    <div class="accordion-body px-4">
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
@@ -999,7 +976,7 @@
                     </div>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
+                    <div class="accordion-body px-4">
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
@@ -1018,7 +995,7 @@
                     </div>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
+                    <div class="accordion-body px-4">
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
@@ -1038,7 +1015,7 @@
                    </div>
                </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#footer-accordion">
-                    <div class="accordion-body">
+                    <div class="accordion-body px-4">
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
                         <a class="d-flex align-items-center gap-2" href="#"> Lorem ipsum </a>
@@ -1048,9 +1025,9 @@
             </div>
         </div>
 
-        <div class="show-other-device container-fluid px-5 pt-5 ">
+        <div class="show-other-device container-fluid px-md-5 px-sm-0 pt-5 ">
             <div class="dropdown">
-                    <div class="d-flex align-items-center text-white gap-3 border py-1 px-4 rounded" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex align-items-center justify-content-around text-white  border py-1 px-4 rounded" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="./assets/images/en.png" width="25px" height="16px" alt="currency-logo">
                         <h6 class="mt-1">English (US)</h6>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -1078,7 +1055,7 @@
             </div>
         </div>
 
-        <div class="terms-links container-fluid px-5 mx-2 d-flex flex-wrap py-md-3 gap-5">
+        <div class="terms-links container-fluid px-md-5 px-sm-0 d-flex flex-wrap py-md-3 gap-3">
             <a href="#">Terms of Use</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Cookie Policy</a>
@@ -1086,7 +1063,7 @@
 
         <hr>
 
-        <div class="copyright container-fluid px-md-5 d-flex flex-wrap-reverse justify-content-md-between justify-content-sm-center">
+        <div class="copyright container-fluid px-md-5 d-flex flex-wrap-reverse justify-content-md-between justify-content-sm-center text-center">
             <p>Copyright © 2022 InfinityCrypto.com All Rights Reserved</p>
             <p>Fri, 13 May 2022 00:48:18 GMT 24h Volume $14,057.98 <i class="fa fa-wifi me-2 text-warning" aria-hidden="true"></i></p>
         </div>

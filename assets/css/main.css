@@ -112,7 +112,9 @@
     padding: 50px 0px ;
     margin: auto;
 }
-.regInfo-section img {
+.regInfo-section img,
+.trade-section img,
+.earn-section img {
     width: calc(100% + 9px);
     top: -22px;
     position: relative;
@@ -155,14 +157,21 @@
 .ecosystem-section {
     position: relative;
 }
+.ecosystem-info h1 {
+    font-size: 40px;
+}
 .eco-img {
-    width: 100%;
+    width: calc(100% + 9px);
     height: auto;
     position: relative;
     bottom: -85px;
     max-width: 800px;
     right: 0px;
     z-index: -2;
+}
+.eco-img img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -312,8 +321,6 @@
         margin-bottom: 20px;
     }
     .ecosystem-info {
-        text-align: center;
-        margin: auto;
         max-width: 100%;
     }
     .coin-chart {
@@ -347,6 +354,16 @@
     .hero-section h1 {
         font-size: 30px;        
     }
+    .regInfo-section .reg-info h1,
+    .trade-section .trade-info h1,
+    .earn-section .trade-info h1,
+    .platform-section .platform-heading h1,
+    .ecosystem-info h1 {
+        font-size: 36px;
+    }
+    .future-section .future-heading h1 {
+        font-size: 40px;
+    }
     .coin-trade {
         display: none;
     }
@@ -360,4 +377,12 @@
     .gap-md-4 .btn-primary {
         margin-right: 4px;
     }
+    .eco-img {
+        bottom: -50px;
+    }
+    /* .future-section {
+        background: url('https://infinitycrypto.com/assets/bg/homeFutureBGDesktop.svg') bottom / cover rgb(3, 10, 31);
+        background-position: center;
+        padding-bottom: 105px;
+    } */
 }

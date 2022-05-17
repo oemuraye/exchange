@@ -1,5 +1,3 @@
-
-
 // Navbar background change 
 const myNav = document.querySelector(".header-navbar");
 
@@ -19,20 +17,21 @@ window.onscroll = () => {
 
 
 //  the modal
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.querySelector('.close-button')
+let modal = document.getElementById("myModal");
+let modalContent = document.getElementById("modal-content");
+let btn = document.getElementById("myBtn");
+let span = document.querySelector('.close-button')
 
 // When the user clicks the button, open the modal 
 btn.onclick = () => {
   modal.style.display = "block";
+  modalContent.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = () => {
-    console.log(span);
-    modal.style.display = "none";
-    console.log(span);
+  modalContent.style.display = "none";
+  modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -42,9 +41,10 @@ window.onclick = (e) => {
   }
 }
 
-var popoverTriggerList = [].slice.call(
+// popover future-section
+let popoverTriggerList = [].slice.call(
   document.querySelectorAll('[data-bs-toggle="popover"]')
 );
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl);
 });
