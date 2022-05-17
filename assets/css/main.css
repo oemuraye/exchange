@@ -5,6 +5,7 @@
     background-size: contain;
     height: 600px;
     margin-bottom: -100px;
+    width: 100%;
 }
 .hero-section .container-fluid {
     padding-top: 100px;
@@ -102,7 +103,24 @@
     color: #798aa9;
 }
 
- 
+.regInfo-section {
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1.19fr;
+    /* gap: 200px; */
+    padding: 50px 0px ;
+    margin: auto;
+}
+.regInfo-section img {
+    width: calc(100% + 9px);
+    top: -22px;
+    position: relative;
+}
+.regInfo-section .reg-info p {
+    max-width: 450px;
+    
+}
 .regInfo-section .reg-info h1 {
     font-size: 40px;
 }
@@ -115,12 +133,36 @@
 .roadmap-details-mobile p {
     font-size: 15px;
     letter-spacing: 0.27;
-    line-height: 1.8;
+    line-height: 34px;
     color: #6e7ba3;
 }
 
+.trade-section {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px 20px;
+}
+.earn-section {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px 20px;
+}
+
 .ecosystem-section {
-    margin-bottom: -75px;
+    position: relative;
+}
+.eco-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: -85px;
+    max-width: 800px;
+    right: 0px;
+    z-index: -2;
 }
 
 
@@ -229,7 +271,7 @@
 .roadmap-details-mobile .divider-mobile {
     background: linear-gradient(90deg, rgb(2, 8, 25) 1.51%, rgb(0, 89, 247) 51.18%, rgb(3, 8, 26) 100.84%);
     width: 2px;
-    height: 100%;
+    height: 85%;
     position: absolute;
     top: 15px;
     left: 35px;
@@ -242,9 +284,37 @@
 
 
 
+@media (max-width: 900px) {
+    .regInfo-section {
+        grid-template-columns: 100%;
+        gap: 70px;
+        padding: 0px 0px 110px;
+    }
+    .regInfo-section .reg-info p {
+        max-width: 95% ;
+    }
+    .trade-section {
+        gap: 70px;
+        grid-template-columns: 100%;
+    }
+    .earn-section {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .ecosystem-info {
+        text-align: center;
+        margin: auto;
+        max-width: 75%;
+    }
+}
 @media (max-width: 767px) {
     .hero-section {
         margin-bottom: 20px;
+    }
+    .ecosystem-info {
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
     }
     .coin-chart {
         display: none;
@@ -258,11 +328,19 @@
     }
 }
 @media (max-width: 600px) {
+    .future-section {
+        background: url('https://infinitycrypto.com/assets/bg/homeFutureBGDesktop.svg') center bottom -550px / cover rgb(3, 10, 31);
+        /* background-position: center; */
+        background-size: 150% 95% ;
+        padding-bottom: 10px;
+        z-index: 1;
+    }
     .roadmap-desktop-show {
         display: none;
     }
     .roadmap-details-mobile {
         display: grid;
+        padding-bottom: 150px;
     }
 }
 @media (max-width: 400px) {

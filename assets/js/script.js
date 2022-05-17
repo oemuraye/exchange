@@ -1,17 +1,3 @@
-// const dropdown = document.querySelector('.dropdownMenuLink')
-// const dropdownArrow = document.querySelectorAll(".dropdown-arrow");
-
-
-// //hamburger toggle
-// dropdown.addEventListener("click", () => {
-//     dropdownArrow.classList.remove("fa-angle-down");
-//     dropdownArrow.classList.add("fa-angle-up");
-
-//   if (dropdown.classList.contains("show")) {
-//     dropdownArrow.classList.remove("fa-angle-up");
-//     dropdownArrow.classList.add("fa-angle-down");
-// }
-// });
 
 
 // Navbar background change 
@@ -25,11 +11,9 @@ window.onscroll = () => {
   ) {
     myNav.classList.add("navbar-color-onscroll");
     myNav.classList.remove("navbar-default-color");
-    backToTopBtn.style.display = "block";
   } else {
     myNav.classList.add("navbar-default-color");
     myNav.classList.remove("navbar-color-onscroll");
-    backToTopBtn.style.display = "none";
   }
 };
 
