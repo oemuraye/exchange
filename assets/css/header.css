@@ -18,6 +18,15 @@ header a:hover {
 .fa-th {
     font-size: 18px;
 }
+.text-polygon {
+    color: #9c72e5;
+}
+.bg-dropdown-icon {
+    background-color: #192138;
+    padding: 12px 8px;
+    border-radius: 7px;
+}
+
 .show-on-desktop {
     display: flex;
 }
@@ -115,6 +124,13 @@ header a:hover {
 .offcanvas {
     background-color: var(--offcanvas-bg-color) !important;
 }
+.bg-accordion-icon {
+    background: rgba(57, 67, 101, 0.3);
+    border-radius: 4px;
+    padding: 8px 4px;
+    position: relative;
+    top: -6px;
+}
 .accordion-item {
     background-color: transparent !important;
     border: none !important;
@@ -132,6 +148,23 @@ header a:hover {
     background-color: transparent !important;
 }
 .accordion-button::after {
+    color: var(--white-color) !important;
+}
+.accordion-body a:hover .fa {
+    color: var(--white-color) !important;
+}
+header .accordion-body .accordion-link span {
+    font-size: 13px;
+    color: #ffffffbf !important;
+}
+header .accordion-body .accordion-link span:hover {
+    color: var(--white-color) !important;
+}
+header .accordion-body .accordion-link p {
+    font-size: 12px;
+}
+.connect-area .btn-primary:hover,
+.connect-area .show-on-mobile:hover {
     color: var(--white-color) !important;
 }
 /* The Modal (background) */
