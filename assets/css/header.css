@@ -6,14 +6,21 @@ header a {
 header a:hover {
     color: var(--basic-color) !important;
 }
-
+.brand-name {
+    height: 18px;
+    width: 110px;
+}
+.brand-name span {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
 .navbar-default-color {
   background-color: transparent;
   /* background-color: var(--basic-dark); */
 }
 .navbar-color-onscroll {
   /* background-color: var(--dark-color); */
-  background-color: #030a1f;
+  background-color: #070d20;
 }
 .fa-th {
     font-size: 18px;
@@ -183,7 +190,7 @@ header .accordion-body .accordion-link p {
 
 /* Modal Content */
 .modal-content {
-  background-color: #030a1f !important;
+  background-color: #070d20 !important;
   margin: auto;
   border: 1px solid #888;
   width: 100%;

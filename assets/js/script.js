@@ -48,3 +48,55 @@ let popoverTriggerList = [].slice.call(
 let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl);
 });
+
+
+let dt = new Date();
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednessday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+]
+
+document.getElementById("datetime").innerHTML =
+  days[dt.getDay()].slice(0, 3) +
+  ", " +
+  months[dt.getMonth()].slice(0, 3) +
+  " " +
+  dt.getFullYear();
+
+
+  const clock = () => {
+  let time = new Date(),
+  
+  hours = time.getHours(),
+  minutes = time.getMinutes(),
+  seconds = time.getSeconds();
+
+  document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" +  harold(minutes) + ":" + harold(seconds);
+  
+  function harold(standIn) {
+    if (standIn < 10) {
+      standIn = '0' + standIn
+    }
+    return standIn;
+  }
+}
+setInterval(clock, 1000);
