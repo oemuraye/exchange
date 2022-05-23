@@ -82,6 +82,7 @@
 .coin-section .text-area p {
     letter-spacing: 0.32px;
 }
+.hero-section .action-area .btn-primary,
 .coin-section .coin-trade .btn-primary,
 .regInfo-section .reg-info .btn-primary,
 .trade-section .trade-info .btn-primary,
